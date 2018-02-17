@@ -1,0 +1,7 @@
+#!/bin/sh
+. /Devel/NOVAsom_SDK/Utils-1.0.5/SourceMe64
+make mrproper
+make distclean
+make sunxi_arm64_defconfig
+make -j32 Image dtbs
+
